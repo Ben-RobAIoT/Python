@@ -1,4 +1,4 @@
-# CODE CHƯA TỐI ƯU - DÀI DÒNG, DO TÔI VIẾT ===> ĐÃ KIỂM TRA THÀNH CÔNG
+# ===============================CODE CHƯA TỐI ƯU - DÀI DÒNG, DO TÔI VIẾT ===> ĐÃ KIỂM TRA THÀNH CÔNG===============================
 student_list_infor = []
 number_of_student = []
 exit_event = True
@@ -268,7 +268,8 @@ else:
             Student_system(exit_event)
     print("Bạn đã hết lượt thử, vui lòng hãy tải lại trang web")
 
-# CODE ĐÃ TỐI ƯU, RÚT GỌN, DO GPT VIẾT ===> ĐÃ KIỂM TRA THÀNH CÔNG
+# ===============================CODE ĐÃ TỐI ƯU, RÚT GỌN, DO GPT VIẾT ===> ĐÃ KIỂM TRA THÀNH CÔNG===============================
+"""
 students = []
 
 FIELDS = ["Họ và tên", "MSSV", "Lớp", "Năm sinh", "Giáo viên", "Phụ huynh", "SĐT phụ huynh"]
@@ -353,4 +354,4 @@ else:
             break
     else:
         print("Hết lượt thử, vui lòng tải lại.")
-
+"""
