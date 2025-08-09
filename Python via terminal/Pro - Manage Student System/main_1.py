@@ -1,8 +1,7 @@
-# ===============================CODE CHƯA TỐI ƯU - DÀI DÒNG, DO TÔI VIẾT ===> ĐÃ KIỂM TRA THÀNH CÔNG===============================
 student_list_infor = []
-number_of_student = []
 exit_event = True
 Exit = True
+
 
 def Add():
     print ("====================================================================")
@@ -18,13 +17,7 @@ def Add():
     last_student = student_list_infor[-1]
 
     print ("====================================================================")
-    print ("{:<20} {:<10} {:<15} {:<10} {:<15} {:<20} {:<15}".format("Họ và tên", 
-                                                                    "MSSV", "Lớp", 
-                                                                    "Năm sinh", 
-                                                                    "Giáo viên", 
-                                                                    "Phụ huynh", 
-                                                                    "SĐT phụ huynh"
-                                                                    ))    
+    Display_2()  
     
     print ("{:<20} {:<10} {:<15} {:<10} {:<15} {:<20} {:<15}".format(last_student[0],
                                                                     last_student[1],
@@ -57,7 +50,7 @@ def Erase():
 
     if not found:
         print(f"Không tìm thấy học sinh có MSSV {id_student}.")
-    Display()
+    Display_all()
 
 def Find():
     print ("====================================================================")
@@ -75,13 +68,7 @@ def Find():
 
             print(f"Thông tin của HS có MSSV: {id_student}.")
             print ("====================================================================")
-            print ("{:<20} {:<10} {:<15} {:<10} {:<15} {:<20} {:<15}".format("Họ và tên", 
-                                                                            "MSSV", "Lớp", 
-                                                                            "Năm sinh", 
-                                                                            "Giáo viên", 
-                                                                            "Phụ huynh", 
-                                                                            "SĐT phụ huynh"
-                                                                            ))    
+            Display_2()
             
             print ("{:<20} {:<10} {:<15} {:<10} {:<15} {:<20} {:<15}".format(student[0],
                                                                             student[1],
@@ -113,14 +100,7 @@ def Modify():
                 Intro()
                 print ("Chọn thông tin cần chỉnh sửa theo form phía trên")
                 print ("Thông tin học sinh NGUYÊN BẢN [trước khi chỉnh sửa]")
-                print ("{:<20} {:<10} {:<15} {:<10} {:<15} {:<20} {:<15}".format("1.Họ và tên", 
-                                                                    "2.MSSV", 
-                                                                    "3.Lớp", 
-                                                                    "4.Năm sinh", 
-                                                                    "5.Giáo viên", 
-                                                                    "6.Phụ huynh", 
-                                                                    "7.SĐT phụ huynh"
-                                                                    ))  
+                Display_2()
                 
                 print ("{:<20} {:<10} {:<15} {:<10} {:<15} {:<20} {:<15}".format(student[0],
                                                                 student[1],
@@ -193,7 +173,7 @@ def Intro():
     print ("[7. Số điện thoại:           ]")
     print ("[============================]")    
 
-def Display():
+def Display_all():
     print("====================================================================")
     print("Công cụ HIỂN THỊ thông tin học sinh")
     if not student_list_infor:
@@ -201,13 +181,7 @@ def Display():
         return
 
     # In tiêu đề
-    print("{:<20} {:<10} {:<15} {:<10} {:<15} {:<20} {:<15}".format("Họ và tên", 
-                                                                    "MSSV", 
-                                                                    "Lớp", 
-                                                                    "Năm sinh", 
-                                                                    "Giáo viên", 
-                                                                    "Phụ huynh", 
-                                                                    "SĐT phụ huynh"))
+    Display_2()
 
     # In từng học sinh
     for student in student_list_infor:
@@ -218,6 +192,16 @@ def Display():
                                                                         student[4], 
                                                                         student[5], 
                                                                         student[6]))
+
+def Display_2():
+    print ("{:<20} {:<10} {:<15} {:<10} {:<15} {:<20} {:<15}".format("Họ và tên [1]", 
+                                                                    "MSSV [2]", 
+                                                                    "Lớp [3]", 
+                                                                    "Năm sinh [4]", 
+                                                                    "Giáo viên [5]", 
+                                                                    "Phụ huynh [6]", 
+                                                                    "SĐT phụ huynh [7]"
+                                                                    ))  
 
 def Student_system(exit_event):
     while exit_event:
@@ -235,16 +219,12 @@ def Student_system(exit_event):
         if (tool == "exit"):
             print ("!!! THOÁT KHỎI hệ thống quản lí thông tin học sinh !!!")
             exit_event = False
-        elif (tool == "a"):
-            Add()
-        elif (tool =="m"):
-            Modify()
-        elif (tool =="e"):
-            Erase()    
-        elif (tool =="f"):
-            Find()
-        elif (tool =="d"):
-            Display()
+            
+        elif (tool == "a"): Add()
+        elif (tool =="m"): Modify()
+        elif (tool =="e"): Erase()    
+        elif (tool =="f"): Find()
+        elif (tool =="d"): Display_all()
         else:
             print("Cú pháp yêu cầu của bạn KHÔNG ĐÚNG theo hướng dẫn")
             print("Vui lòng nhập lại theo trên")
@@ -268,90 +248,4 @@ else:
             Student_system(exit_event)
     print("Bạn đã hết lượt thử, vui lòng hãy tải lại trang web")
 
-# ===============================CODE ĐÃ TỐI ƯU, RÚT GỌN, DO GPT VIẾT ===> ĐÃ KIỂM TRA THÀNH CÔNG===============================
-"""
-students = []
 
-FIELDS = ["Họ và tên", "MSSV", "Lớp", "Năm sinh", "Giáo viên", "Phụ huynh", "SĐT phụ huynh"]
-
-def print_header():
-    print("{:<20} {:<10} {:<15} {:<10} {:<15} {:<20} {:<15}".format(*FIELDS))
-
-def input_student_info():
-    return [input(f"Nhập {f}: ") for f in FIELDS]
-
-def display(students_list=None):
-    if not students_list:
-        print("Danh sách học sinh trống.")
-        return
-    print_header()
-    for s in students_list:
-        print("{:<20} {:<10} {:<15} {:<10} {:<15} {:<20} {:<15}".format(*s))
-
-def add():
-    print("\n--- Thêm học sinh ---")
-    students.append(input_student_info())
-    print(">>>>> Thêm học sinh mới thành công <<<<<")
-    display([students[-1]])
-
-def erase():
-    print("\n--- Xóa học sinh ---")
-    if not students: return print("Danh sách trống.")
-    mssv = input("Nhập MSSV: ")
-    for s in students:
-        if s[1] == mssv:
-            students.remove(s)
-            print(f"Đã xóa MSSV {mssv} thành công!")
-            return display(students)
-    print(f"Không tìm thấy MSSV {mssv}.")
-
-def find():
-    print("\n--- Tìm kiếm học sinh ---")
-    if not students: return print("Danh sách trống.")
-    mssv = input("Nhập MSSV: ")
-    for s in students:
-        if s[1] == mssv:
-            return display([s])
-    print(f"Không tìm thấy MSSV {mssv}.")
-
-def modify():
-    print("\n--- Sửa thông tin học sinh ---")
-    if not students: return print("Danh sách trống.")
-    mssv = input("Nhập MSSV: ")
-    for s in students:
-        if s[1] == mssv:
-            while True:
-                display([s])
-                try:
-                    idx = int(input("Chọn số trường muốn sửa (1-7): ")) - 1
-                    if 0 <= idx < len(FIELDS):
-                        s[idx] = input(f"Nhập {FIELDS[idx]} mới: ")
-                    else:
-                        print("Không hợp lệ.")
-                except ValueError:
-                    print("Nhập số.")
-                if input("Sửa tiếp? (Y/N): ").upper() != "Y":
-                    break
-            return
-    print(f"Không tìm thấy MSSV {mssv}.")
-
-def system():
-    while True:
-        print("\nChọn chức năng: [a] Thêm | [m] Sửa | [e] Xóa | [f] Tìm | [d] Hiển thị | exit")
-        cmd = input("> ").lower()
-        if cmd == "exit":
-            print("Thoát hệ thống.")
-            break
-        {"a": add, "m": modify, "e": erase, "f": find, "d": lambda: display(students)}.get(cmd, lambda: print("Sai cú pháp"))()
-
-if input("***Nhập cú pháp 'STD_INFO' để truy cập: ") == "STD_INFO":
-    system()
-else:
-    for i in range(4):
-        print(f"Bạn còn {3-i} lần thử.")
-        if input("Nhập lại cú pháp: ") == "STD_INFO":
-            system()
-            break
-    else:
-        print("Hết lượt thử, vui lòng tải lại.")
-"""
