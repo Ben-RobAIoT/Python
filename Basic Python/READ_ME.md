@@ -1,132 +1,93 @@
-# 🐍 Các cách sử dụng hàm `print()` trong Python
+# 📚 Lộ trình học Python cơ bản
 
-Hàm `print()` trong Python được dùng để xuất dữ liệu ra màn hình hoặc file.  
-Dưới đây là tổng hợp các cách sử dụng thường gặp, kèm ví dụ và kết quả.
+## Bài 1 – HELLO WORLD
+**Kiến thức cần đạt:**
+- Làm quen với Python IDL, WingIDL, Pycharm.
+- Hàm `print()` trong Python.  
+- Kiểu dữ liệu chuỗi.
+- Các lưu ý khi sử dụng `print()`.
 
----
-
-## 1. Cơ bản nhất
-```python
-print("Hello, world!")
-```
-**Kết quả:**
-```
-Hello, world!
-```
+**Kỹ năng cần đạt:**
+- Biết cách cài đặt phần mềm.
+- Biết cách thực thi chương trình.
+- Hiểu cách sử dụng lệnh `print()`.
 
 ---
 
-## 2. In nhiều giá trị cùng lúc
-```python
-print("Họ:", "Nguyễn", "Văn", "A")
-```
-**Kết quả:**
-```
-Họ: Nguyễn Văn A
-```
+## Bài 2 – PHẦN MỀM TÍNH ĐIỂM TRUNG BÌNH CỘNG
+**Kiến thức cần đạt:**
+- Hiểu cách tính điểm trong Thế vận hội Đông Nam Á.
+- Sử dụng biến, các kiểu dữ liệu.
+- Sử dụng toán tử gán và toán tử số học.
+- Biết cách sử dụng `input()` và lệnh ghi chú.
+- Lập trình phần mềm tính điểm TBC.
+
+**Kỹ năng cần đạt:**
+- Biết cách sử dụng biến, toán tử gán và toán tử số học.
+- Hiểu về các kiểu dữ liệu trong Python.
+- Biết cách áp dụng `input()` để giải quyết các bài toán thực tiễn.
 
 ---
 
-## 3. Thay đổi ký tự phân tách (`sep`)
-```python
-print("2025", "08", "11", sep="-")
-```
-**Kết quả:**
-```
-2025-08-11
-```
+## Bài 3 – THỬ TÀI MÁY TÍNH
+**Kiến thức cần đạt:**
+- Hiểu cách chơi và quy tắc của môn cờ vua.
+- Làm quen vòng lặp `for`.
+- Sử dụng vòng lặp để tối ưu hóa trong lập trình.
+
+**Kỹ năng cần đạt:**
+- Biết cách sử dụng vòng lặp `for`.
+- Biết ứng dụng vòng lặp trong vấn đề thực tế.
+- Biết ứng dụng vòng lặp để giải quyết các bài toán thực tiễn.
 
 ---
 
-## 4. Không xuống dòng sau khi in (`end`)
-```python
-print("Hello", end=" ")
-print("world")
-```
-**Kết quả:**
-```
-Hello world
-```
+## Bài 5 – PHẦN MỀM XẾP LOẠI HỌC SINH
+**Kiến thức cần đạt:**
+- Hiểu cách phân chia cấp bậc trong giáo dục Việt Nam.
+- Tìm hiểu về cấu trúc rẽ nhánh trong lập trình.
+- Làm quen với các câu lệnh: `if – else`; `if – elif – else`.
+
+**Kỹ năng cần đạt:**
+- Hiểu được cấu trúc rẽ nhánh.
+- Biết sử dụng các câu lệnh `if – else`; `if – elif – else`.
+- Biết ứng dụng cấu trúc rẽ nhánh để giải quyết các bài toán thực tiễn.
 
 ---
 
-## 5. Dùng f-string (Python 3.6+)
-```python
-name = "Tín"
-age = 20
-print(f"Tôi tên {name}, {age} tuổi")
-```
-**Kết quả:**
-```
-Tôi tên Tín, 20 tuổi
-```
+## Bài 6 – BẦU TRỜI ĐẦY SAO
+**Kiến thức cần đạt:**
+- Hiểu về quỹ đạo hoạt động của Trái đất.
+- Sử dụng toán tử so sánh và logic trong lập trình.
+- Làm quen vòng lặp `while`.
+- Sử dụng `break` và `continue` trong vòng lặp `while`.
+
+**Kỹ năng cần đạt:**
+- Biết cách sử dụng vòng lặp `while`.
+- Biết cách sử dụng `break` và `continue` trong vòng lặp.
+- Biết ứng dụng vòng lặp để giải quyết các bài toán thực tiễn.
 
 ---
 
-## 6. Dùng `.format()`
-```python
-print("Tôi tên {}, {} tuổi".format(name, age))
-print("Tôi tên {1}, {0} tuổi".format(age, name))
-```
-**Kết quả:**
-```
-Tôi tên Tín, 20 tuổi
-Tôi tên Tín, 20 tuổi
-```
+## Bài 7 – PHẦN MỀM QUẢN LÝ HỌC SINH
+**Kiến thức cần đạt:**
+- Khái niệm List trong Python.
+- Cách sử dụng List và List lồng nhau.
+- Truy xuất phần tử và các thao tác xử lý trong `list()`.
+- Các lưu ý khi sử dụng List.
+
+**Kỹ năng cần đạt:**
+- Biết cách truy xuất, các thao tác với List.
+- Biết ứng dụng List để giải quyết các bài toán thực tiễn.
 
 ---
 
-## 7. Dùng toán tử `%` (cũ nhưng vẫn gặp)
-```python
-print("Tôi tên %s, %d tuổi" % (name, age))
-```
-**Kết quả:**
-```
-Tôi tên Tín, 20 tuổi
-```
+## Bài 8 – QUẢN LÝ THU CHI HỌC SINH
+**Kiến thức cần đạt:**
+- Hiểu khái niệm và tác dụng của hàm trong Python.
+- Hiểu cú pháp khai báo và cách thức gọi hàm.
+- Xây dựng hàm quản lý thu chi.
 
----
-
-## 8. In nhiều dòng
-```python
-print("""Dòng 1
-Dòng 2
-Dòng 3""")
-```
-**Kết quả:**
-```
-Dòng 1
-Dòng 2
-Dòng 3
-```
-
----
-
-## 9. In kèm biểu thức
-```python
-a, b = 5, 3
-print("Tổng:", a + b)
-print(f"{a} + {b} = {a + b}")
-```
-**Kết quả:**
-```
-Tổng: 8
-5 + 3 = 8
-```
-
----
-
-## 10. In sang file
-```python
-with open("output.txt", "w", encoding="utf-8") as f:
-    print("Ghi vào file thay vì màn hình", file=f)
-```
-📄 Nội dung file `output.txt`:
-```
-Ghi vào file thay vì màn hình
-```
-
----
-
-✍ **Tác giả:** [Tên của bạn]  
-📅 **Ngày cập nhật:** 2025-08-11  
+**Kỹ năng cần đạt:**
+- Biết cách sử dụng hàm trong lập trình.
+- Biết cách áp dụng hàm để thu gọn chương trình và giải quyết một số vấn đề trong thực tiễn.
