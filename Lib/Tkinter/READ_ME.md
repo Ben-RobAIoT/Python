@@ -1,3 +1,6 @@
+✍ **Tác giả:** [Phan Bao Tin - Beniot]  
+📅 **Ngày cập nhật:** 12-08-2025  
+
 # 🖥️ Giới thiệu Tkinter – Thư viện GUI chuẩn trong Python
 
 ## 1. Giới thiệu chung
@@ -54,9 +57,9 @@ root.mainloop()
 - Kết hợp thư viện khác: PIL (xử lý ảnh), Matplotlib (biểu đồ)
 
 ## 7. 📚Tài nguyên học tập
-📚 Tài liệu Tkinter – Python.org
-🎥 Playlist Tkinter trên YouTube
-💬 Cộng đồng:
+- 📚Tài liệu Tkinter – Python.org
+- 🎥Playlist Tkinter trên YouTube
+- 💬Cộng đồng:
   - Stack Overflow
   - Reddit r/learnpython
 
