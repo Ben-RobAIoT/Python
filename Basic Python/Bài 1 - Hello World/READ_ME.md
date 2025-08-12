@@ -153,6 +153,7 @@ Nhập số nguyên vào đây:
 # Dòng ghi chú 2
 # Dòng ghi chú 3
 ```
+```
     - Cách 2: Sử dụng kí tự """...""" hoặc '''...'''
 ```python
 '''
