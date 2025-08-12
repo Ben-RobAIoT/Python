@@ -1,26 +1,26 @@
-name: Update README Date
+name: Update All READMEs Date
 
 on:
   push:
     paths:
-      - "README.md"  # Chỉ chạy khi README.md thay đổi
+      - "**/README.md"  # Chạy khi bất kỳ README nào thay đổi
 
 jobs:
-  update-date:
+  update-dates:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Update date in README
+      - name: Update dates in all README.md files
         run: |
           DATE=$(date +"%Y-%m-%d %H:%M:%S")
-          sed -i "s/{{DATE}}/$DATE/" README.md
+          find . -name "README.md" -type f -exec sed -i "s/{{DATE}}/$DATE/g" {} +
 
       - name: Commit changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          git add .
           git commit -m "Auto update date: $DATE" || echo "No changes to commit"
           git push
