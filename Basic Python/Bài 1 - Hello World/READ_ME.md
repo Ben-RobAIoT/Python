@@ -1,5 +1,5 @@
 ✍ **Tác giả:** [Phan Bao Tin - Beniot]  
-📅 **Ngày cập nhật:** 2025-08-11  
+📅 **Ngày cập nhật:** {{DATE}}  
 
 # 🐍 Các cách sử dụng hàm `print()` trong Python
 
