@@ -7,7 +7,7 @@ Hàm `print()` trong Python được dùng để xuất dữ liệu ra màn hìn
 Dưới đây là tổng hợp các cách sử dụng thường gặp, kèm ví dụ và kết quả.
 
 ---
-
+s
 ## 1. Cơ bản nhất
 ```python
 print("Hello, world!")
