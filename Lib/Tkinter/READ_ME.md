@@ -62,7 +62,7 @@ root.mainloop()
 - 💬Cộng đồng:
   - Stack Overflow
   - Reddit r/learnpython
-  - GeeksforGeeks [https://www.geeksforgeeks.org/python/python-gui-tkinter/]
+  - [GeeksforGeeks](https://www.geeksforgeeks.org/python/python-gui-tkinter/)
 
 ## 8. 📌Ghi chú
 Tkinter phù hợp cho ứng dụng nhỏ – vừa, nếu bạn muốn giao diện hiện đại hơn, có thể tìm hiểu PyQt5, PySide6, Kivy.
