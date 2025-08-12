@@ -128,6 +128,30 @@ Ghi vào file thay vì màn hình
 
 ---
 
+# Cách ghi chú trong Python
+Có 2 kiểu ghi chú trong Python
+1) Ghi chú trên 1 dòng  [Single-line comment]
+    -) Kí tự: "#"
+    -) Giải thích: Mọi thứ sau '#' chương trình sẽ không thực thi
+    -) Ví dụ
+```python
+a = int(input("Nhập số nguyên vào đây: ") # Gán 1 biến 'a' với kiểu là dữ liệu 'nhập vào' là một 'số nguyên'
+```
+**Kết quả:**
+Không hiển thị bất kì đoạn mã nào liên quan tới "Gán 1 biến 'a' với kiểu là dữ liệu 'nhập vào' là một 'số nguyên'"
+```
+Nhập số nguyên vào đây: 
+```
+2) Ghi chú nhiều dòng [Multiple-line comment]
+
+
+```
+
+```
+
+# Bài tập thực hành
+
+
 ✍ **Tác giả:** [Phan Bao Tin - Beniot]  
 📅 **Ngày cập nhật:** 2025-08-11  
 
