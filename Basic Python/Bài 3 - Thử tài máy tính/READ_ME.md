@@ -1,3 +1,6 @@
+✍ **Tác giả:** [Phan Bao Tin - Beniot]  
+📅 **Ngày cập nhật:** 2025-08-11  
+
 # Bài 3 – THỬ TÀI MÁY TÍNH
 
 ## 🎯 Kiến thức cần đạt
