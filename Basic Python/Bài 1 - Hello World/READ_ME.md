@@ -152,10 +152,7 @@ Nhập số nguyên vào đây:
 ```
     - Cách 2: Sử dụng kí tự **"""..."""** hoặc **'''...'''**
 ```python
-'''
-Đây là ghi chú nhiều dòng
-Nó sẽ bị bỏ qua khi không được gán cho biến
-'''
+
 ```
 3) Docstring (Document string)
     - Dùng """ ... """ hoặc ''' ... '''
