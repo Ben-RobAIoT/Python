@@ -1,3 +1,6 @@
+✍ **Tác giả:** [Phan Bao Tin - Beniot]  
+📅 **Ngày cập nhật:** 2025-08-11  
+
 # Bài 2 – PHẦN MỀM TÍNH ĐIỂM TRUNG BÌNH CỘNG
 
 ## 🎯 Kiến thức cần đạt:
