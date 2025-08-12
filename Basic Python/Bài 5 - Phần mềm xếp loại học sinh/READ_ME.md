@@ -1,3 +1,6 @@
+✍ **Tác giả:** [Phan Bao Tin - Beniot]  
+📅 **Ngày cập nhật:** 2025-08-11  
+
 # Bài 5 – PHẦN MỀM XẾP LOẠI HỌC SINH
 
 ## 🎯 Kiến thức cần đạt
