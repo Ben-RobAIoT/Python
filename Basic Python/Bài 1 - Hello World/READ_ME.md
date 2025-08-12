@@ -131,11 +131,11 @@ Ghi vào file thay vì màn hình
 # Cách ghi chú trong Python
 Có 2 kiểu ghi chú trong Python
 1) Ghi chú trên 1 dòng  [Single-line comment]
-    - Kí tự: "#"
-    - Giải thích: Mọi thứ sau '#' chương trình sẽ không thực thi
+    - Kí tự: **#**
+    - Giải thích: Mọi thứ sau **#** chương trình sẽ không thực thi
     - Ví dụ:
 ```python
-a = int(input("Nhập số nguyên vào đây: ") # Gán 1 biến **a** với kiểu là dữ liệu **nhập vào** là một **số nguyên**
+a = int(input("Nhập số nguyên vào đây: ") # Gán 1 biến a với kiểu là dữ liệu nhập vào là một số nguyên
 ```
 **Kết quả:**
 Không hiển thị bất kì đoạn mã nào liên quan tới (Gán 1 biến **a** với kiểu là dữ liệu **nhập vào** là một **số nguyên**)
@@ -143,10 +143,18 @@ Không hiển thị bất kì đoạn mã nào liên quan tới (Gán 1 biến *
 Nhập số nguyên vào đây: 
 ```
 2) Ghi chú nhiều dòng [Multiple-line comment]
-
-
+    - Cách 1: Sử dụng nhiều ghi chú 1 dòng **#**
+```python
+# Dòng ghi chú 1
+# Dòng ghi chú 2
+# Dòng ghi chú 3
 ```
-
+    - Cách 2: Sử dụng kí tự **"""..."""** hoặc **'''...'''**
+```python
+'''
+Đây là ghi chú nhiều dòng
+Nó sẽ bị bỏ qua khi không được gán cho biến
+'''
 ```
 
 # Bài tập thực hành
