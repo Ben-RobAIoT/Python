@@ -153,7 +153,7 @@ Nhập số nguyên vào đây:
 # Dòng ghi chú 2
 # Dòng ghi chú 3
 ```
-    - Cách 2: Sử dụng kí tự **"""..."""** hoặc **'''...'''**
+    - Cách 2: Sử dụng kí tự """...""" hoặc '''...'''
 ```python
 '''
 Đây là ghi chú nhiều dòng
