@@ -2,8 +2,8 @@ name: Update All READMEs Date
 
 on:
   push:
-    paths:
-      - "**/README.md"  # Chạy khi bất kỳ README nào thay đổi
+    branches:
+      - main  # hoặc branch bạn dùng
 
 jobs:
   update-dates:
