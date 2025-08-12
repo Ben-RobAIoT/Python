@@ -142,7 +142,7 @@ Không hiển thị bất kì đoạn mã nào liên quan tới (Gán 1 biến *
 ```
 Nhập số nguyên vào đây: 
 ```
----
+
 2) Ghi chú nhiều dòng [Multiple-line comment]
     - Cách 1: Sử dụng nhiều ghi chú 1 dòng **#**
 ```python
@@ -157,7 +157,23 @@ Nhập số nguyên vào đây:
 Nó sẽ bị bỏ qua khi không được gán cho biến
 '''
 ```
+3) Docstring (Document string)
+    - Dùng """ ... """ hoặc ''' ... '''
+    - Khác với ghi chú thường, docstring được lưu trong thuộc tính .__doc__ của hàm/lớp/module → hỗ trợ tài liệu hoá.
 
+```python
+def hello(name):
+    """
+    Hàm hello
+    Tham số:
+        name (str): Tên người dùng
+    Trả về:
+        None
+    """
+    print(f"Xin chào {name}")
+
+print(hello.__doc__)
+```
 ---
 # Bài tập thực hành
 
