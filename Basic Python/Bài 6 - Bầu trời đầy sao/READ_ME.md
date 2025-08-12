@@ -1,3 +1,6 @@
+✍ **Tác giả:** [Phan Bao Tin - Beniot]  
+📅 **Ngày cập nhật:** 2025-08-11  
+
 ## Bài 6 – BẦU TRỜI ĐẦY SAO
 
 **Kiến thức cần đạt:**
