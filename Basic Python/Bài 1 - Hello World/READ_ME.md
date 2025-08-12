@@ -142,6 +142,7 @@ Không hiển thị bất kì đoạn mã nào liên quan tới (Gán 1 biến *
 ```
 Nhập số nguyên vào đây: 
 ```
+
 2) Ghi chú nhiều dòng [Multiple-line comment]
     - Cách 1: Sử dụng nhiều ghi chú 1 dòng **#**
 ```python
@@ -157,6 +158,7 @@ Nó sẽ bị bỏ qua khi không được gán cho biến
 '''
 ```
 
+---
 # Bài tập thực hành
 
 
