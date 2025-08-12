@@ -128,6 +128,6 @@ Ghi vào file thay vì màn hình
 
 ---
 
-✍ **Tác giả:** [Tên của bạn]  
+✍ **Tác giả:** [Phan Bao Tin - Beniot]  
 📅 **Ngày cập nhật:** 2025-08-11  
 
