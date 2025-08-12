@@ -5,7 +5,7 @@
 
 Hàm `print()` trong Python được dùng để xuất dữ liệu ra màn hình hoặc file.  
 Dưới đây là tổng hợp các cách sử dụng thường gặp, kèm ví dụ và kết quả.
-
+i
 ---
 
 ## 1. Cơ bản nhất
